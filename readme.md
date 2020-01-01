@@ -28,6 +28,9 @@ The Lumen framework is open-sourced software licensed under the [MIT license](ht
 * execute command `composer install`
 * execute the bash file `serve.sh` to start the development server on your local
 
+#### Event Broadcast
+Event broadcast using `log` as driver. So, broadcasted event can be check on `storage/log/lumen.log`
+
 #### Postman Collection
 [Postman Link Collection](https://documenter.getpostman.com/view/381955/SWLccUAK?version=latest)
 
