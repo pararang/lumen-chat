@@ -19,3 +19,14 @@ If you discover a security vulnerability within Lumen, please send an e-mail to 
 ## License
 
 The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Up the Apps
+#### Deploy Local
+* pull [this-repo] as [this-repo-on-local]
+* cd to [this-repo-on-local]
+* ensure you have the `.env` file, if not just make with command `cp .env.example .env`
+* execute command `composer install`
+* execute the bash file `serve.sh` to start the development server on your local
+
+#### Test
+* execute command `vendor/bin/phpunit tests/Message --debug`
