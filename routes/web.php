@@ -18,4 +18,5 @@ $router->get('/', function () use ($router) {
 $router->group(['prefix' => 'messages', 'as' => 'messages.'], function () use ($router) {
     $router->post('/', ['uses' => 'MessageController@store', 'as' => 'store']);
     $router->get('/', ['uses' => 'MessageController@index', 'as' => 'index']);
+    $router->get('/stream', ['uses' => 'MessageController@stream', 'as' => 'stream']);
 });
