@@ -2,6 +2,7 @@
 
 abstract class TestCase extends Laravel\Lumen\Testing\TestCase
 {
+    public $apiResponseStructure = ['code', 'message', 'data'];
     /**
      * Creates the application.
      *
