@@ -1,4 +1,4 @@
-#About this Apps
+# About this Apps
 ## Up the Apps
 #### Deploy Local
 * pull [this-repo] as [this-repo-on-local]
@@ -16,6 +16,8 @@ Event broadcast using `log` as driver. So, broadcasted event can be check on `st
 #### Test
 * execute command `vendor/bin/phpunit tests/Message --debug`
 
+#### Todo a.k.a Unfinished Works
+Kindly check on [Issues](https://github.com/pararang/lumen-chat/issues)
 
 # Lumen PHP Framework
 
