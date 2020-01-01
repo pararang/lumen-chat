@@ -1,3 +1,22 @@
+#About this Apps
+## Up the Apps
+#### Deploy Local
+* pull [this-repo] as [this-repo-on-local]
+* cd to [this-repo-on-local]
+* ensure you have the `.env` file, if not just make with command `cp .env.example .env`
+* execute command `composer install`
+* execute the bash file `serve.sh` to start the development server on your local
+
+#### Event Broadcast
+Event broadcast using `log` as driver. So, broadcasted event can be check on `storage/log/lumen.log`
+
+#### Postman Collection
+[Postman Link Collection](https://documenter.getpostman.com/view/381955/SWLccUAK?version=latest)
+
+#### Test
+* execute command `vendor/bin/phpunit tests/Message --debug`
+
+
 # Lumen PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
@@ -19,20 +38,3 @@ If you discover a security vulnerability within Lumen, please send an e-mail to 
 ## License
 
 The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-
-## Up the Apps
-#### Deploy Local
-* pull [this-repo] as [this-repo-on-local]
-* cd to [this-repo-on-local]
-* ensure you have the `.env` file, if not just make with command `cp .env.example .env`
-* execute command `composer install`
-* execute the bash file `serve.sh` to start the development server on your local
-
-#### Event Broadcast
-Event broadcast using `log` as driver. So, broadcasted event can be check on `storage/log/lumen.log`
-
-#### Postman Collection
-[Postman Link Collection](https://documenter.getpostman.com/view/381955/SWLccUAK?version=latest)
-
-#### Test
-* execute command `vendor/bin/phpunit tests/Message --debug`
