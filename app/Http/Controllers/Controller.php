@@ -7,11 +7,20 @@ use Symfony\Component\HttpFoundation\Response;
 
 class Controller extends BaseController
 {
-    public function apiResponse($httpCode, $data = null, $message = '')
+    /**
+     * @param int $httpCode
+     * @param mixed $data
+     * @param string $message
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function apiResponse(int $httpCode, $data = null, $message = '')
     {
+        // validate accepted httpCode
         if (! isset(Response::$statusTexts[$httpCode])) {
             $this->apiResponse(Response::HTTP_INTERNAL_SERVER_ERROR);
         }
+
+        // data must be and array or object or null
         if (!is_null($data) && !is_array($data) && !is_object($data)) {
             $this->apiResponse(Response::HTTP_INTERNAL_SERVER_ERROR);
         }

@@ -28,5 +28,8 @@ The Lumen framework is open-sourced software licensed under the [MIT license](ht
 * execute command `composer install`
 * execute the bash file `serve.sh` to start the development server on your local
 
+#### Postman Collection
+[Postman Link Collection](https://documenter.getpostman.com/view/381955/SWLccUAK?version=latest)
+
 #### Test
 * execute command `vendor/bin/phpunit tests/Message --debug`

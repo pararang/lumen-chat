@@ -10,6 +10,13 @@ use Symfony\Component\HttpFoundation\Response;
 
 class MessageController extends Controller
 {
+    /**
+     * store/send message
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     *
+     * param on request: string message required
+     */
     public function store(Request $request)
     {
         // assume message is mandatory
@@ -20,6 +27,13 @@ class MessageController extends Controller
         return $this->apiResponse(Response::HTTP_CREATED, $request->only('message'));
     }
 
+    /**
+     *
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     *
+     * param on request: int limit optional
+     */
     public function index(Request $request)
     {
         // max message to retrieve
